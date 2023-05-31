@@ -1,0 +1,97 @@
+/* CSS Snippet from W3schools: https://www.w3schools.com/howto/howto_css_contact_form.asp */
+/* Style inputs with type="text", select elements and textareas */
+* {
+  font-family: Helvetica;
+}
+
+div.stDownloadButton > button {
+  border: 2px solid #5d4037;
+  background-color: #fef8ef;
+}
+
+.block-container {
+  padding-left: 300px;
+  padding-right: 300px;
+  line-height: 1rem;
+}
+
+.titleheader {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0.2em;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.titlesubheader{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0.4em;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: italic;
+}
+
+.inline-icons {
+  font-size: 1em !important;
+  vertical-align: center;
+  display: inline-flex;
+}
+
+h4, h5, ul > li, p {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  margin-bottom: 24px;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  border-top: 2px solid;
+}
+
+a:link, a, a:visited, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type=email], input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #5d4037;
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+background-color: #5d4037;
+color: white;
+padding: 12px 20px;
+border: 1px solid #5d4037;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type=submit]:hover {
+background-color: #fff;
+color: #5d4037;
+border: 1px solid #5d4037;
+}
+
+/* Hide Streamlit Branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
