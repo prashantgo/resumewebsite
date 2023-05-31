@@ -25,9 +25,9 @@ with st.container():
     col1.markdown('<div class="titlesubheader">Software Development Engineer</div>', unsafe_allow_html=True)
     col2.download_button("Download Resume", file_name="resume_prashant.pdf", mime="application/octet-stream", data=pdfbytes)
 
-    cols = st.columns((1.3, 0.7, 1, 1))
+    cols = st.columns((1.3, 0.7, 1, 0.5))
     l = ['prashant.goyal.che15@itbhu.ac.in', '8813801058',  'prashant-goyal-31a588137']
-    icons = ['<i class="fa-solid fa-envelope"></i>', '<i class="fa-solid fa-phone"></i>', '<i class="fa-brands fa-linkedin"></i>']
+    icons = ['<i class="fa-solid fa-envelope marg"></i>', '<i class="fa-solid fa-phone marg"></i>', '<i class="fa-brands fa-linkedin marg"></i>']
     for index, (item, icon, col) in enumerate(zip(l, icons, cols[:3])):
         text = icon_span(icon, item)
         if index == 2:
@@ -79,13 +79,19 @@ with st.container():
         - Git, Docker, Flask
         """,
         "**Database**",
-        "MongoDB, Redis, PostgreSql, Amazon Redshift, ElasticSearch",
-        "**ML**",
-        "Top Regression, Classification, Clustering Models, PCA, Cross Validation, DL Models",
+        """
+        - MongoDB, Redis
+        - PostgreSql, Redshift
+        - ElasticSearch
+        """,
         "**Others**",
-        "RestAPI, Celery, Ansible, Jenkins, Keras, Streamlit, Scikit-Learn, C/C++"
+        """
+        - RestAPI, Celery, Streamlit
+        - Ansible, Jenkins
+        - Keras, Scikit-Learn, C/C++
+        """
     ]
-    for heading, skills, col in zip(items[::2], items[1::2], cols):
+    for heading, skills, col in zip(items[::2], items[1::2], cols[:3]):
         col.markdown(heading)
         col.markdown(skills)
 
@@ -124,7 +130,7 @@ with st.container():
             - Created blog using NodeJS, Django and Flask
             - Content-based recommendation system, Tweets Sentimental Analysis
             - Sum of squares of 2 Numbers Using Neural Nets
-            - Multiple Streamlit apps like this website
+            - Streamlit apps like dashboards and this resume page
         """
     )
 

@@ -9,10 +9,19 @@ div.stDownloadButton > button {
   background-color: #fef8ef;
 }
 
+/* Mobile */
 .block-container {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
   line-height: 1rem;
+}
+
+/* Desktop */
+@media (min-width: 1236px) {
+  .block-container {
+      padding-left: 20%;
+      padding-right: 20%;
+  }
 }
 
 .titleheader {
@@ -36,6 +45,10 @@ div.stDownloadButton > button {
   font-style: italic;
 }
 
+.marg {
+  margin-bottom: 0.5rem;
+}
+
 .inline-icons {
   font-size: 1em !important;
   vertical-align: center;
@@ -55,7 +68,7 @@ ul {
 hr {
   margin-top: 0px;
   margin-bottom: 0.75rem;
-  border-top: 2px solid;
+  border-top: 0.125rem solid;
 }
 
 a:link, a, a:visited, a:hover {
@@ -65,7 +78,7 @@ a:link, a, a:visited, a:hover {
 
 input[type=email], input[type=text], textarea {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
   border: 1px solid #5d4037;
   border-radius: 4px;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -78,7 +91,7 @@ input[type=email], input[type=text], textarea {
 button[type=submit] {
 background-color: #5d4037;
 color: white;
-padding: 12px 20px;
+padding: 0.75rem 1.25rem;
 border: 1px solid #5d4037;
 border-radius: 4px;
 cursor: pointer;
