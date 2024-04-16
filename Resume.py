@@ -11,7 +11,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 local_css("style/style.css")
 
-with open("assets/resume_prashant_goyal_latest.pdf", "rb") as pdf_file:
+with open("assets/resume_latest.pdf", "rb") as pdf_file:
     pdfbytes = pdf_file.read()
 
 def icon_span(icon, item, mclass="inline-icons"):
@@ -26,7 +26,7 @@ with st.container():
     col2.download_button("Download Resume", file_name="resume_prashant.pdf", mime="application/octet-stream", data=pdfbytes)
 
     cols = st.columns((1.3, 0.7, 1, 0.5))
-    l = ['prashant.goyal.che15@itbhu.ac.in', '8813801058',  'prashant-goyal-31a588137']
+    l = ['prashant.goyal.che15@itbhu.ac.in', '+91-8813801058',  'prashant-goyal-31a588137']
     icons = ['<i class="fa-solid fa-envelope marg"></i>', '<i class="fa-solid fa-phone marg"></i>', '<i class="fa-brands fa-linkedin marg"></i>']
     for index, (item, icon, col) in enumerate(zip(l, icons, cols[:3])):
         text = icon_span(icon, item)
@@ -76,7 +76,7 @@ with st.container():
         """
         - Python, AWS, DRF
         - Django, FastAPI, Pandas
-        - Git, Docker, Flask
+        - Git, Docker, Flask, Pydantic
         """,
         "**Database**",
         """
@@ -129,8 +129,8 @@ with st.container():
             - Text and music notes generation using LSTMs
             - Created blog using NodeJS, Django and Flask
             - Content-based recommendation system, Tweets Sentimental Analysis
-            - Sum of squares of 2 Numbers Using Neural Nets
-            - Streamlit apps like dashboards and this resume page
+            - Designed neural netsto compute and model various mathematical functions
+            - Multiple dashboards and a resume page using Tableau and Streamlit
         """
     )
 
